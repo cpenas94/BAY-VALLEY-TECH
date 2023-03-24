@@ -1,0 +1,25 @@
+.container-fluid {
+    display: flex;
+    flex-direction: orde;
+    justify-content: space-around;
+}
+
+.object-one, .object-two, .object-three {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    text-align: center;
+}
+
+.object-one{
+    background-color: red;
+    order: 1;
+}
+.object-two{
+    background-color: blue;
+    order: 2;
+}
+.object-three{
+    background-color: yellow;
+    order: 3;
+}
