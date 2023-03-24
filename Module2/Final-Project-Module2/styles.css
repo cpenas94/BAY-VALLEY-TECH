@@ -1,0 +1,97 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333232;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(173, 173, 173);
+	color: black;
+	width: 80%;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 5px 1px #999;
+	height: 80vh;
+}
+
+.top h1{
+font-size: 3em;
+}
+
+.top small{
+	font-size: 1.1em;
+	text-transform: capitalize;
+}
+hr{
+	width: 80%;
+}
+
+#sampleWord{
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#inputWords{
+	width: 50%;
+	height: 30px;
+}
+.results{
+	height: 30px;
+}
+.results h4{
+	background-color: rgb(255, 81, 38);
+	border-radius: 5px;
+	width: 50%;
+	margin: 10px auto 0 auto;
+	height: 30px;
+	visibility: hidden;
+}
+
+.score{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 10px auto;
+	
+
+}
+.inst{
+	background-color: rgb(46, 45, 45);
+	width:80%;
+	margin:3px auto;
+	border-radius: 5px;
+	color: azure;
+	padding: 1px;
+	
+}
+.inst p{
+	letter-spacing: 2px;
+}
+#time{
+flex:2;
+}
+#sco{
+	flex: 2;
+}
+#startGame{
+	width: 50%;
+	background-color: skyblue;
+	color: black;
+	border-radius: 5px;
+	outline:none;
+	margin: 100px auto 0 auto;
+	border:none;
+	height: 35px;
+	font-size: 1.3em;
+	padding: 0.25em;
+	cursor: pointer;
+}
+#startGame:hover{
+	color:white;
+	background-color: blue;
+}

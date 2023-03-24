@@ -1,0 +1,43 @@
+<body>
+<script>
+    class Menu {
+        constructor(item, price) {
+        this.item = item;
+        this.price = price;
+    }
+
+    question () {
+        console.log("What would you like to order?"); 
+
+    }
+}
+
+
+class Appetizer extends Menu {
+    constructor(item, price, isSpicy) {
+        super(item, price);
+        this.isSpicy = isSpicy;
+    } 
+
+    selectItem () {
+        if (this.item === 'chicken wings' && this.isSpicy === false) {
+            console.log(`You have ordered non-spicy ${this.item}! That will cost ${this.price}`);
+        }
+    }
+}
+
+
+let appetizer1 = new Appetizer('chicken wings', 6, false);
+console.log(appetizer1.selectItem());
+
+let menuItem1 = new Menu('ribeye', 25);
+console.log(menuItem1);
+
+
+class mainDish extends Menu {
+    constructor(item, price) {
+        super(item, price);
+    }
+}
+</script>
+</body>

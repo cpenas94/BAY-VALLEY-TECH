@@ -1,0 +1,75 @@
+<body>
+    <h2 id="title">Classes: The Basics</h2>
+
+    <!-- <script>
+        /*
+            Class -> Object
+
+            Instance Properties: what they have
+                -name
+                -age
+                -height
+
+            Instance Methods: what they do
+                -talk
+                -run
+                -jump
+        */
+
+        /*class Rectangle {
+            // Setup
+            constructor (_width, _height, _color) {
+                console.log("The Rectangle is being created!");
+
+                this.width = _width;
+                this.height = _height;
+                this.color = _color;
+            }
+
+            getArea () {
+                return this.width * this.height;
+            }
+
+            printDescription (){
+                console.log('I am a rectangle of ${this.width} x ${this.height} and I am ${this.color}');
+            }
+        }
+
+        let myRectangle1 = new Rectangle(3, 5, "blue");
+        let myRectangle2 = new Rectangle(10, 5, "red");
+
+        myRectangle2.printDescription();
+        */
+    </script>
+    <script type = "text/javascript">
+        class Square {
+            constructor (_width) {
+                this.width = _width;
+                this.height = _width;
+                this.numOfRequestsForArea = 0;
+            }
+
+            get area () {
+                this.numOfRequestsForArea++;
+                return this.width * this.height;
+            }
+
+            set area (area) {
+                this.width = Math.sqrt(area);
+                this.height = this.width;
+            }
+        }
+
+        let square1 = new Square(4);
+        square1.area = 25;
+        console.log(square1.area);
+        console.log(square1.area);
+        console.log(square1.area);
+        console.log(square1.area);
+
+        console.log(square1.numOfRequestsForArea);
+    </script>
+-->
+
+
+</body>
